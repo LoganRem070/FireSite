@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="left-side">
+        <div class="fixed-table-container">
+            <!--<img src="logo.webp" alt="">-->
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Company Chief</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cpt">Captain 33</span><br>Captain</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="cpt">Captain 233</span><br>Captain</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td>Lieutenant</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">R33, R333, R333, R33</td>
+                    </tr>
+                    <tr>
+                        <td><span class="full">Full Responder</span><br>Firefighter</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="full">Full Responder</span><br>Firefighter</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="full">Full Responder</span><br>Firefighter</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="full">Full Responder</span><br>Firefighter</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="limited">Limited Responder</span><br>Firefighter</td>
+                        <td>Jose Saint Timmy Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="limited">Limited Responder</span><br>Firefighter</td>
+                        <td>Jose Saint Timmy Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="limited">Limited Responder</span><br>Firefighter</td>
+                        <td>Jose Saint Timmy Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td><span class="limited">Limited Responder</span><br>Firefighter</td>
+                        <td>Jose Saint Timmy Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td>Recruit</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td>Recruit</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    <tr>
+                        <td>Recruit</td>
+                        <td>Jacob Jones</td>
+                        <td class="rigs">EMT</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <h3>The mission of the Shasta County Fire Department shall be to stand ready to protect life, property and the environment utilizing our trained and equipped personnel. This includes structural and wild-land fire control, first response medical care, and assistance to other emergency service agencies.</h3>
+
+        </div>
+
+        <p>©️ 2024 : Logan Rembisz</p>
+    </div>
+    <div class="right-side">
+        <div class="top-section">
+            <img src="logo.webp" alt="Company Logo">
+            <h1>Bella Vista Fire Department</h1>
+            <h1>Volunteer Company 33</h1>
+            <p>Calls this Year: 2,034</p>
+        </div>
+        <div class="bottom-section">
+            <iframe src="https://cameras.alertcalifornia.org/?pos=40.8313_-121.9768_13&id=Axis-RoundMtnShasta2" frameborder="0"></iframe>
+            <iframe src="https://app.watchduty.org" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        function autoScroll() {
+            const container = document.querySelector('.fixed-table-container');
+            let scrollAmount = 0;
+            let scrollStepAmount = 0.1;
+            
+            async function scrollStep() {
+                scrollAmount += scrollStepAmount;
+                container.scrollTop = scrollAmount;
+                
+                if (scrollAmount >= container.scrollHeight - container.clientHeight || scrollAmount <= 0) {
+                    scrollStepAmount -= (scrollStepAmount * 2);
+                    await sleep(2000);
+                }
+                
+                requestAnimationFrame(scrollStep);
+            }
+            scrollStep();
+        }
+        
+        document.addEventListener('DOMContentLoaded', autoScroll);
+    </script>
+
+</body>
+</html>

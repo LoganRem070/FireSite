@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    display: flex;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    text-transform: uppercase;
+}
+.left-side {
+    width: 22%;
+}
+
+
+.fixed-table-container {
+    width: 22%; /* Set your desired width */
+    height: 95vh; /* Set your desired height */
+    overflow: hidden; /* Hides the scrollbar */
+    position: absolute; /* Fixes the position */
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+    padding-top: 2.4%;
+    padding-bottom: 2.4%;
+}
+
+.right-side {
+    width: 78%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    color: #ffc23f;
+    background-image: url('bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-section h1 {
+    margin: 0.3em;
+    -webkit-text-stroke: 2px black;
+}
+
+.top-section p {
+    -webkit-text-stroke: 1px black;
+}
+
+.top-section img {
+    height: 30%;
+    width: auto;
+    margin: 0.6em;
+}
+
+.bottom-section {
+    display: flex;
+    height: 50%;
+}
+.bottom-section iframe {
+    width: 50%;
+    height: 100%;
+}
+
+.left-side p {
+    text-align: center;
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    padding-left: 1%;
+}
+
+.left-side img {
+    width: 90%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.left-side h3 {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+
+.rigs {
+    text-align: right;
+    font-size: 12.25633234px;
+}
+
+/*
+RESPONMDER COLORS + SIZE
+*/
+
+.limited {
+    font-size: 10px;
+    color: blue;
+}
+
+.full {
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.cpt {
+    font-size: 10px;
+    color: rgb(255, 0, 0);
+}
