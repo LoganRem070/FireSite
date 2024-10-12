@@ -51,7 +51,8 @@ th, td {
 }
 
 .top-section p {
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1.5px black;
+    font-size: x-large;
 }
 
 .top-section img {
