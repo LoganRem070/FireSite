@@ -24,4 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     fetchWeather(); // Initial fetch
     setInterval(fetchWeather, 60000); // Fetch every 60 seconds (60000 milliseconds)
+
+    var count = 1;
+    function newBG() {
+        count++;
+        if (count == 1) {
+            document.getElementById('top-section').style.backgroundImage = "url('bg1.png')";
+        } else if (count == 2) {
+            document.getElementById('top-section').style.backgroundImage = "url('bg2.png')";
+            count = 0; //MAKE SURE THIS ENDS UP IN THE LAST IF STATEMENT
+        }
+    }
+
+    newBG(); // Initial fetch
+    setInterval(newBG, 300000); // Fetch every 5 minutes
 });
