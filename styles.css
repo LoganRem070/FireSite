@@ -1,7 +1,7 @@
 body {
     margin: 0;
     display: flex;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     text-transform: uppercase;
 }
 .left-side {
@@ -43,6 +43,7 @@ th, td {
     background-image: url('bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .top-section h1 {
@@ -59,6 +60,7 @@ th, td {
     height: 30%;
     width: auto;
     margin: 0.6em;
+    margin-top: 2em;
 }
 
 .bottom-section {
@@ -118,4 +120,53 @@ RESPONMDER COLORS + SIZE
 .cpt {
     font-size: 10px;
     color: rgb(255, 0, 0);
+}
+
+
+.tippitytop {
+    height: 70%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.fuckMyAss { 
+    height: 30%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #fbc02d;
+    overflow: hidden;
+    color: black;
+}
+
+#temp {
+    height: 70%;
+    font-size: xx-large;
+    margin-left: 2%;
+    width: 10%;
+    float: left;
+}
+
+.fuckMyAss table {
+    height: 60%;
+    width: 85%;
+    float: right;
+    margin: 1%;
+    border: 0px;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.fuckMyAss table, .fuckMyAss th, .fuckMyAss td {
+    border: 0px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+}
+
+.superDuperKYS {
+    font-size: 10px;
+    color: grey;
 }
