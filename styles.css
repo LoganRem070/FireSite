@@ -108,6 +108,11 @@ th, td {
 .rigs {
     text-align: center;
     font-size: 12.25633234px;
+    border-right: 0px;
+}
+
+.democrat {
+    border-left: 0px;
 }
 
 /*
