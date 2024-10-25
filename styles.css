@@ -182,3 +182,33 @@ RESPONMDER COLORS + SIZE
     font-size: 10px;
     color: grey;
 }
+
+
+
+.scrolling-text-container {
+    width: 94%;
+    margin: 0 2%;
+    margin-top: 0.4%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.scrolling-text {
+    display: inline-block;
+    animation: scroll 10000s linear infinite;
+}
+
+.scrolling-text span {
+    display: inline-block;
+    padding-right: 30px; /* Space between repeats */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
