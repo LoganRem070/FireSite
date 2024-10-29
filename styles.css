@@ -63,10 +63,10 @@ th, td {
 }
 
 .top-section img {
-    height: 30%;
+    height: 10em;
     width: auto;
     margin: 0.6em;
-    margin-top: 2em;
+    margin-top: 1.2em;
 }
 
 .bottom-section {
@@ -136,14 +136,13 @@ RESPONMDER COLORS + SIZE
 
 
 .tippitytop {
-    height: 70%;
     width: 100%;
     position: absolute;
     top: 0;
     text-align: center;
 }
 
-.fuckMyAss { 
+.nicerWords { 
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -160,7 +159,7 @@ RESPONMDER COLORS + SIZE
     float: left;
 }
 
-.fuckMyAss table {
+.nicerWords table {
     height: 60%;
     width: 85%;
     float: right;
@@ -170,7 +169,7 @@ RESPONMDER COLORS + SIZE
     text-align: center;
 }
 
-.fuckMyAss table, .fuckMyAss th, .fuckMyAss td {
+.nicerWords table, .nicerWords th, .nicerWords td {
     border: 0px solid black;
     border-collapse: collapse;
     padding: 5px;
