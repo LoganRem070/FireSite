@@ -3977,7 +3977,7 @@
                 
                 if (scrollAmount >= container.scrollHeight - container.clientHeight || scrollAmount <= 0) {
                     scrollStepAmount -= (scrollStepAmount * 2);
-                    await sleep(2000);
+                    await sleep(3000);
                 }
                 
                 requestAnimationFrame(scrollStep);
